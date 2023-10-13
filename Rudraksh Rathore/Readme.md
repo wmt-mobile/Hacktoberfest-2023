@@ -19,5 +19,12 @@ Trello provide wide range of features for project management. You can create boa
 **1. Visual Collaboration**:  It's highly visual, allowing you to grasp the project's entirety at a glance. Create boards for different projects and customize them to suit your workflow. Add lists for various project stages and cards for specific tasks.
 
 **2. Seamless Task Management**: Each task is represented as a card. You can add detailed descriptions, checklists, due dates, attachments, and labels
+to these cards.
+**3. Bug reporting**: The client and project management team can easily report and track down the bug in cards. This helps clients to understand the progress regarding that bug.
 
+### Slack
+In the realm of modern communication tools, Slack stands tall as a game-changer. It is not just another messaging app; it is a powerful platform that revolutionizes the way teams collaborate, share ideas, and get work done. Here is a glimpse into the world of Slack and why it has become the go-to choice for businesses and teams worldwide:
+**1. Streamlining Communication**: Slack organizes conversations into channels, ensuring that discussions are focused and relevant. Whether it’s #marketing, #design, or #general, channels keep everyone in the loop without overwhelming them with unrelated messages.
+**2. Enhancing Collaboration**: Sharing files in Slack is a breeze. Whether it’s a document, image, or video, you can drag and drop files directly into the chat. This feature ensures that everyone has access to the latest files without sifting through a cluttered inbox.
+**3. Boosting Productivity**:  Slack is highly customizable. Teams can create custom emojis, set notification preferences, and even integrate chatbots for specific tasks. This flexibility ensures that Slack adapts to the unique needs and preferences of each team.
 
