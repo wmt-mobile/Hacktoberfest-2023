@@ -147,4 +147,19 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 	extent.flush();
 	}
 	}
+##### 4. Running Tests:
 
+You can run your tests using TestNG. Right-click the test class and select "Run as TestNG Test" if you're using an IDE like Eclipse or IntelliJ IDEA. Alternatively, you can run the tests from the command line.
+
+	mvn test
+
+
+##### 5. Viewing the HTML Report:
+
+After running the tests, TestNG will generate HTML reports in the test-output directory. Open the HTML report in a web browser to view the test results.
+
+This example demonstrates a basic setup for E2E automation testing with Java, Selenium, TestNG, and ExtentReports for HTML reporting. In real-world scenarios, you would create more comprehensive test cases, handle various test scenarios, and potentially integrate your tests into a continuous integration pipeline for automated testing and reporting.
+
+##### Conclusion
+
+End-to-End automation testing with HTML reports is a powerful approach to ensure the quality and reliability of your software. By automating tests that simulate real user interactions and providing detailed, user-friendly HTML reports, your team can identify issues early, track improvements over time, and make data-driven decisions. Implementing E2E automation testing with HTML reports requires careful planning and the right tools, but the benefits in terms of software quality and development efficiency are well worth the investment.
