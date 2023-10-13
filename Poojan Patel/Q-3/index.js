@@ -1,3 +1,4 @@
+//add
 function convertToZeros(arr) {
   const sum = arr.reduce((acc, num) => acc + num, 0);
 
@@ -10,4 +11,3 @@ function convertToZeros(arr) {
 
 const arr = [1, 2, 3];
 const result = convertToZeros(arr);
-console.log(result);
