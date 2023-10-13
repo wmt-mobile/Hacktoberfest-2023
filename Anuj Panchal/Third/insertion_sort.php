@@ -11,8 +11,6 @@ for ($i = 1; $i < $length; $i++) { $key=$arr[$i]; $j=$i - 1; while ($j>= 0 && $a
 
     return $arr;
     }
-
-    // Example usage:
     $unsortedArray = [12, 11, 13, 5, 6];
     $sortedArray = insertionSort($unsortedArray);
 
