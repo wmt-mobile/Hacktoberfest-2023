@@ -1,0 +1,3 @@
+- ## Q. Find the inorder traversal of a binary tree.
+- ## Q. Find the preorder traversal of a binary tree.
+- ## Q. ind the count for the occurrence of a particular character in a string.
