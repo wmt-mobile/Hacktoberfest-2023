@@ -30,3 +30,23 @@ There are a number of different agile project management frameworks, each with i
 * **Scrum:** Scrum is a lightweight framework that involves small, cross-functional teams working in sprints.
 * **Kanban:** Kanban is a more flexible framework that focuses on visualizing and optimizing the flow of work.
 * **Lean:** Lean is a framework that focuses on eliminating waste and delivering value to customers as quickly as possible.
+
+  **Agile Project Management Roles**
+
+There are three core roles in agile project management:
+
+* **Product Owner:** The product owner is responsible for prioritizing the project backlog and ensuring that the team is delivering the features and functionality that are most important to stakeholders.
+* **Scrum Master:** The scrum master is responsible for facilitating the scrum process and ensuring that the team is following agile principles and practices.
+* **Development Team:** The development team is responsible for delivering working software in each sprint.
+
+**Agile Project Management Practices**
+
+Some common agile project management practices include:
+
+* **Sprints:** Sprints are short, time-boxed periods (typically 2-4 weeks) during which the team works on a specific set of tasks.
+* **Backlogs:** The backlog is a prioritized list of all the work that needs to be done on the project.
+* **Daily stand-up meetings:** The daily stand-up meeting is a short meeting (typically 15 minutes) where each team member shares what they worked on the previous day, what they plan to work on today, and any blockers they are facing.
+* **Sprint planning meetings:** The sprint planning meeting is a meeting where the team selects the tasks that they will work on during the next sprint.
+* **Sprint review meetings:** The sprint review meeting is a meeting where the team demonstrates the work that they completed during the sprint to stakeholders and gets feedback.
+* **Sprint retrospective meetings:** The sprint retrospective meeting is a meeting where the team reflects on what went well and what could be improved during the previous sprint.
+
