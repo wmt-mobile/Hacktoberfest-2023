@@ -45,4 +45,47 @@ public class DriverFactory {
     }
 }
 ```
+###3. Writing Test Cases:
+
+Craft your test cases keeping parallel execution in mind.
+```java
+public class TestClassOne { 
+    @BeforeMethod
+    public void setup() {
+        WebDriver driver = new ChromeDriver();
+        DriverFactory.setWebDriver(driver);
+    }
+
+    @Test
+    public void testMethodOne() {
+        WebDriver driver = DriverFactory.getDriver();
+        driver.get("https://www.example1.com");
+        // Your test steps here
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        WebDriver driver = DriverFactory.getDriver();
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+}
+```
+###4. TestNG XML Configuration:
+```xml
+<suite name="com.mycompany_demoParallelTests_jar_1.0-SNAPSHOT">
+
+    <test name="ParallelClass suite" parallel="classes" thread-count="2">
+        
+        <classes>
+            <class name="TestPackages.TestClassOne"/>
+        </classes>
+    </test>
+
+</suite>
+```
+Here, parallel="classes" dictates that each class will execute on a separate thread, with thread-count="2" permitting two parallel threads.
+###5. Execute Your Tests:
+Run your TestNG suite. You should observe simultaneous execution of your test classes.
 
