@@ -1,12 +1,11 @@
 void main() {
-
+  print("Find a min and max number without Math function in list");
 
   List<int> num = [400,30,300,80,10];
 
   int max = num[0];
   int min = num[0];
 
-  print("Find a min and max number without Math function in list");
 
   for(int i=0; i<num.length; i++){
 
