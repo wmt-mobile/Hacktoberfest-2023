@@ -63,7 +63,7 @@ Reverse each word in a given sentence.
 ### Solution:
     ```dart
     import 'dart:io';
-    
+     
     void main() {
     print("Enter a string: ");
     String input = stdin.readLineSync() ?? ""; // Read user input
