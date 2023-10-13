@@ -53,4 +53,98 @@ Now, let's delve into how to implement E2E automation testing with HTML reports 
 
 ### Example of End-to-End Automation Testing with HTML Reports:
 Performing End-to-End (E2E) automation testing with HTML reports in Java often involves using a combination of testing frameworks and libraries, such as Selenium for test automation and TestNG for test execution and reporting. Here's a simple example of E2E automation testing for a web application using Java, Selenium, and TestNG to generate HTML reports:
+##### Prerequisites:
+
+1. Java Development Kit (JDK) installed.
+2. Selenium WebDriver library.
+3. TestNG library.
+4. WebDriver-compatible browser drivers (e.g., ChromeDriver).
+
+#### Steps:
+##### 1. Setting Up Your Project:
+
+Start by creating a new Java project in your preferred Integrated Development Environment (IDE). You can use tools like Eclipse, IntelliJ IDEA, or Visual Studio Code.
+
+##### 2. Adding Dependencies:
+
+In your Java project, add the necessary dependencies for Selenium, TestNG, and an HTML report library (e.g., ExtentReports) to your project. You can do this by adding the following lines to your pom.xml file if you're using Maven:
+
+	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.1.5</version>
+		</dependency>
+	</dependencies>
+
+Make sure to update the versions to the latest available versions at the time you're working on your project.
+
+##### 3. Creating Test Cases:
+
+Create a Java class with TestNG annotations to define your test cases. Here's a basic example of a test class for a login scenario:
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.*;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+	public class E2ETest {
+
+	private WebDriver driver;
+	private ExtentReports extent;
+	private ExtentTest test;
+
+	@BeforeSuite
+	public void beforeSuite() {
+	extent = new ExtentReports();
+	ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("test-output/extent.html");
+	extent.attachReporter(htmlReporter);
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+	System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
+	driver = new ChromeDriver();
+	}
+
+	@Test
+	public void loginTest() {
+	test = extent.createTest("Login Test");
+	driver.get("https://example.com"); // Replace with your application URL
+	WebElement usernameField = driver.findElement(By.id("username"));
+	WebElement passwordField = driver.findElement(By.id("password"));
+	WebElement loginButton = driver.findElement(By.id("login-button"));
+
+	usernameField.sendKeys("yourusername");
+	passwordField.sendKeys("yourpassword");
+	loginButton.click();
+
+	// You can add assertions and other test steps here
+	test.log(Status.PASS, "Login successful");
+	}
+
+	@AfterTest
+	public void afterTest() {
+	driver.quit();
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+	extent.flush();
+	}
+	}
 
