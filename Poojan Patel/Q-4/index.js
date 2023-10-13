@@ -1,1 +1,2 @@
-//add two number
+//add two INTEGER NUMBER
+//
