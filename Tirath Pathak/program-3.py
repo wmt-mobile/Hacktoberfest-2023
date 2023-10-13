@@ -22,7 +22,7 @@ def vowel_count(str):
 	print("No. of vowels :", count)
 	
 # Driver code
-str = "GeeksforGeeks"
+str = "HelloWorld"
 
 # Function Call
 vowel_count(str)
